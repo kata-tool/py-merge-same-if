@@ -20,11 +20,18 @@
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.python</depends>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <localInspection
+                level="WARNING"
+                displayName="Merge same if"
+                groupName="Python"
+                enabledByDefault="true"
+                language="Python"
+                implementationClass="org.example.pymergesameif.MergeSameIfInspection"
+        />
     </extensions>
 </idea-plugin>

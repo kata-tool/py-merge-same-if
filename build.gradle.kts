@@ -15,9 +15,9 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2023.1.5")
-    type.set("IC") // Target IDE Platform
+    type.set("PC") // Target IDE Platform: PyCharm Community Edition
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf("PythonCore"))
 }
 
 tasks {
